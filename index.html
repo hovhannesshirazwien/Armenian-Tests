@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Հայերեն ուսումնական թեստեր</title>
+
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #20252b;
+    --accent: #6b4eff;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, "Noto Sans Armenian", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+  }
+
+  header h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+  }
+
+  header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 17px;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px 50px;
+  }
+
+  .tests {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+
+  .test-card {
+    background: var(--card);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px #00000015;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: var(--text);
+    display: block;
+  }
+
+  .test-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px #00000020;
+  }
+
+  .test-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .test-content {
+    padding: 20px;
+  }
+
+  .test-content h2 {
+    margin: 0 0 10px;
+    font-size: 21px;
+  }
+
+  .test-content p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .open-test {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background: var(--accent);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  footer {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 25px;
+    }
+
+    header p {
+      font-size: 15px;
+    }
+
+    .test-card img {
+      height: 180px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Հայերեն ուսումնական թեստեր</h1>
+  <p>Ընտրիր թեման և սկսիր վարժությունը</p>
+</header>
+
+<main>
+
+  <div class="tests">
+
+    <!--
+      ==========================================================
+      ԹԵՍՏ 1 — ՔՐԻՍՏՈՆԵՈՒԹՅԱՆ ԸՆԴՈՒՆՈՒՄԸ
+      ==========================================================
+    -->
+
+    <a class="test-card" href="Christianity.html">
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6f/%D4%B7%D5%BB%D5%B4%D5%AB%D5%A1%D5%AE%D5%B6%D5%AB_%D5%84%D5%A1%D5%B5%D6%80_%D5%8F%D5%A1%D5%B3%D5%A1%D6%80.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+        alt="Էջմիածնի Մայր տաճար"
+      >
+
+      <div class="test-content">
+
+        <h2>Հայաստանի քրիստոնեության ընդունումը</h2>
+
+        <p>
+          Պատմություն և հայոց լեզու․
+          ինտերակտիվ վարժություններ և թեստ։
+        </p>
+
+        <span class="open-test">
+          Սկսել թեստը →
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <!--
+      ==========================================================
+      ՀԵՏԱԳԱՅՈՒՄ ԱՅՍՏԵՂ ԿԱՐՈՂ ԵՍ ԱՎԵԼԱՑՆԵԼ ՆՈՐ ԹԵՍՏԵՐ
+      ==========================================================
+
+      Պարզապես պատճենիր ամբողջ test-card-ը և փոխիր՝
+
+      1. href="ՆՈՐ_ՖԱՅԼ.html"
+      2. img src="ՆՈՐ_ՆԿԱՐԻ_ՀԱՍՑԵ"
+      3. alt="ՆԿԱՐԻ ՆԿԱՐԱԳՐՈՒԹՅՈՒՆ"
+      4. h2-ի վերնագիրը
+      5. p-ի նկարագրությունը
+
+      Օրինակ՝
+
+      <a class="test-card" href="History.html">
+
+        <img
+          src="նկարի հասցեն"
+          alt="նկարի նկարագրությունը"
+        >
+
+        <div class="test-content">
+
+          <h2>Միջնադարյան Հայաստան</h2>
+
+          <p>
+            Վարժություններ Հայաստանի միջնադարյան պատմության վերաբերյալ։
+          </p>
+
+          <span class="open-test">
+            Սկսել թեստը →
+          </span>
+
+        </div>
+
+      </a>
+
+    -->
+
+  </div>
+
+</main>
+
+<footer>
+  Ուսումնական թեստեր
+</footer>
+
+</body>
+</html>
